@@ -21,16 +21,16 @@ Model Evaluation: Evaluating model performance using metrics such as accuracy, p
 ## Dataset
 The dataset used in this project is the Wine Quality Dataset from the UCI Machine Learning Repository. It contains various chemical properties of red wine and a quality score. The features include:
 
-Fixed acidity
-Volatile acidity
-Citric acid
-Residual sugar
-Chlorides
-Free sulfur dioxide
-Total sulfur dioxide
-Density
-pH
-Sulphates
+Fixed acidity,
+Volatile acidity,
+Citric acid,
+Residual sugar,
+Chlorides,
+Free sulfur dioxide,
+Total sulfur dioxide,
+Density,
+pH,
+Sulphates,
 Alcohol
 
 The target variable is:
