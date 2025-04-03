@@ -46,7 +46,7 @@ For the **classification** task, we use the following performance metrics:
 - Accuracy
 - Precision
 - Recall
--F1-score
+- F1-score
 
 ## Getting Started
 
