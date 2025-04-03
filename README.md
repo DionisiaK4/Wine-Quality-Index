@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project was developed as a part of lab lecture "Introduction to Machine Learning and MLOps" at the class of Software Engineering in Practice at Athens University of Economics and Business (AUEB).
+This project was developed as part of the "Introduction to Machine Learning and MLOps" lab lecture in the Software Engineering in Practice course at the Athens University of Economics and Business (AUEB).
 
 It focuses on leveraging machine learning models to predict the quality of red wine using various features of the wine, such as alcohol content, pH, residual sugar, and other chemical properties. The models used in this example are for both classification (predicting wine quality as a discrete label) and regression (predicting wine quality as an integer value).
 
@@ -12,8 +12,8 @@ It focuses on leveraging machine learning models to predict the quality of red w
 
 The dataset used in this project is the Wine Quality Dataset from the UCI Machine Learning Repository. You can download it from [Kaggle](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009/data). 
 
-It contains various chemical properties of red wine and a quality score (from 0 to 10):
-- The features are 11 and include:Fixed acidity, Volatile acidity, Citric acid, Residual sugar, Chlorides, Free sulfur dioxide, Total sulfur dioxide, Density, pH, Sulphates, Alcohol
+It contains various chemical properties of red wine and a quality score (from 0 to 10)
+- The features are 11 and include: Fixed acidity, Volatile acidity, Citric acid, Residual sugar, Chlorides, Free sulfur dioxide, Total sulfur dioxide, Density, pH, Sulphates, Alcohol
 
 - The target variable is: quality of the wine as an integer value between 0 and 10.
 
@@ -32,6 +32,8 @@ It contains various chemical properties of red wine and a quality score (from 0 
 1. Logistic Regression
 2. Random Forest Classifier
 
+
+<br>
 
 ### Models Evaluation
 
@@ -55,6 +57,8 @@ To run this notebook, you'll need the following:
 - VScode
 - The following Python packages: `pandas`, `sklearn`
 
+<br>
+
 ### Installation
 
 1. Clone this repository to your local machine using:
@@ -66,6 +70,8 @@ To run this notebook, you'll need the following:
    pip install pandas scikit-learn
    ```
 3. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009/data) and place it in main directory as the other files under the name `winequality-red.csv`.
+
+<br>
 
 ### Running the Notebook
 
