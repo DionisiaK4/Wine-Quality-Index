@@ -1,101 +1,76 @@
 # Wine-Quality-Index
 
-This project focuses on building machine learning models to predict the quality of red wine using various features of the wine, such as alcohol content, pH, residual sugar, and other chemical properties. The models are designed for both classification (predicting wine quality as a discrete label) and regression (predicting wine quality as a continuous value).
-
-
 ## Project Overview
 
-The goal of this project is to develop and evaluate machine learning models to predict the quality of red wine. We use the Wine Quality Dataset from the UCI Machine Learning Repository, which contains attributes such as acidity, alcohol content, and sulphates, to predict the wine quality.
+This project was developed as a part of lab lecture "Introduction to Machine Learning and MLOps" at the class of Software Engineering in Practice at Athens University of Economics and Business (AUEB).
 
-The project includes the following components:
+It focuses on leveraging machine learning models to predict the quality of red wine using various features of the wine, such as alcohol content, pH, residual sugar, and other chemical properties. The models used in this example are for both classification (predicting wine quality as a discrete label) and regression (predicting wine quality as an integer value).
 
-Data Preprocessing: Handling missing values, scaling, encoding categorical data.
-
-Exploratory Data Analysis (EDA): Analyzing the data to identify trends and patterns.
-
-Model Training: Using both classification (for predicting quality as a class) and regression (for predicting quality as a numeric value) models.
-
-Model Evaluation: Evaluating model performance using metrics such as accuracy, precision, recall (for classification) and RMSE, MAE (for regression).
 
 
 ## Dataset
 
-The dataset used in this project is the Wine Quality Dataset from the UCI Machine Learning Repository. It contains various chemical properties of red wine and a quality score. The features include:
+The dataset used in this project is the Wine Quality Dataset from the UCI Machine Learning Repository. You can download it from [Kaggle](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009/data). 
 
-Fixed acidity
+It contains various chemical properties of red wine and a quality score (from 0 to 10):
+- The features are 11 and include:Fixed acidity, Volatile acidity, Citric acid, Residual sugar, Chlorides, Free sulfur dioxide, Total sulfur dioxide, Density, pH, Sulphates, Alcohol
 
-Volatile acidity
-
-Citric acid
-
-Residual sugar
-
-Chlorides
-
-Free sulfur dioxide
-
-Total sulfur dioxide
-
-Density
-
-pH
-
-Sulphates
-
-Alcohol
-
-The target variable is:
-
-Quality: An integer value between 0 and 10 representing the quality of the wine.
-
-
-## Usage
-
-### Data Preprocessing: Load and clean the dataset, handling missing values and scaling features.
-
-### Exploratory Data Analysis (EDA): Use matplotlib and seaborn to visualize relationships between features and the target variable.
-
-### Model Training:
-
-**Classification**: Train classification models (e.g., Decision Tree, Random Forest, Logistic Regression, etc.) to predict wine quality as a categorical class.
-
-**Regression**: Train regression models (e.g., Linear Regression, Random Forest Regressor, XGBoost, etc.) to predict wine quality as a continuous value.
-
-### Model Evaluation: Evaluate both classification and regression models using appropriate metrics (accuracy, precision, recall, F1-score for classification and RMSE, MAE for regression).
+- The target variable is: quality of the wine as an integer value between 0 and 10.
 
 
 ## Models
-The following models are implemented in this project:
-
-### Classification Models:
-
-Logistic Regression
-Random Forest Classifier
-Support Vector Machine (SVM)
-
-### Regression Models:
-
-Linear Regression
-
-Each model is evaluated using cross-validation and various performance metrics.
 
 
-## Evaluation
+### Models Selection
 
-For the classification task, we use the following metrics:
+**Regression Models**: to predict wine quality as an integer value.
+1. Linear Regression
+2. Random Forest Regressor
 
-**Accuracy**
+**Classification Models**: to predict wine quality as a categorical class(low, medium, high quality). To convert the numeric quality values of the dataset into categorical classes, we discretized them into three bins (0–4, 4–6, and 6–10) based on their frequency distribution.
 
-**Precision**
+1. Logistic Regression
+2. Random Forest Classifier
 
-**Recall**
 
-**F1-score**
+### Models Evaluation
 
-For the regression task, we evaluate the model using:
+For the **regression** task, we use the following performance metrics:
+- Mean Squared Error
+- R-squared Score
 
-**Mean Absolute Error (MAE)**
 
-**Root Mean Squared Error (RMSE)**
+For the **classification** task, we use the following performance metrics:
+- Accuracy
+- Precision
+- Recall
+-F1-score
 
-**R-squared score**
+## Getting Started
+
+### Prerequisites
+
+To run this notebook, you'll need the following:
+- Python 3.6 or later
+- VScode
+- The following Python packages: `pandas`, `sklearn`
+
+### Installation
+
+1. Clone this repository to your local machine using:
+   ```
+   git clone https://github.com/DionisiaK4/Wine-Quality-Index.git
+   ```
+2. Install the required Python packages using:
+   ```
+   pip install pandas scikit-learn
+   ```
+3. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/uciml/red-wine-quality-cortez-et-al-2009/data) and place it in main directory as the other files under the name `winequality-red.csv`.
+
+### Running the Notebook
+
+You suggest running the notebook using VScode for simplicity.
+
+1. Navigate to the cloned repository's directory.
+2. Open the `Wine Quality ML Practical Example.ipynb` notebook.
+4. Run the cells in order to execute the separate parts of code.
